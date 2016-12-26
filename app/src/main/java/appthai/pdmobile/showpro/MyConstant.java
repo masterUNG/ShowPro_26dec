@@ -17,6 +17,7 @@ public class MyConstant {
             "pro_detail text," +
             "pro_price text," +
             "pro_regist text," +
+            "pro_code text," +
             "period_id text," +
             "pro_date text);";
 
@@ -26,6 +27,7 @@ public class MyConstant {
             "pro_detail text," +
             "pro_price text," +
             "pro_regist text," +
+            "pro_code text," +
             "period_id text," +
             "pro_date text);";
 
@@ -35,6 +37,7 @@ public class MyConstant {
             "pro_detail text," +
             "pro_price text," +
             "pro_regist text," +
+            "pro_code text," +
             "period_id text," +
             "pro_date text);";
 
@@ -45,6 +48,7 @@ public class MyConstant {
             "pro_detail",
             "pro_price",
             "pro_regist",
+            "pro_code",
             "period_id",
             "pro_date"};
 

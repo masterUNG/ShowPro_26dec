@@ -13,7 +13,7 @@ public class MyOpenHelper extends SQLiteOpenHelper{
     //Ex
     private Context context;
     private MyConstant myConstant;
-    private static final String database_name = "ShowPro.db";
+    public static final String database_name = "ShowPro.db";
     private static final int database_version = 1;
 
     public MyOpenHelper(Context context) {

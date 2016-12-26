@@ -68,12 +68,12 @@ public class MyAdapter extends BaseAdapter{
         dateRecordTextView = (TextView) view1.findViewById(R.id.textView7);
 
         //Showtext
-        nameTextView.setText(nameStrings[i]);
+        nameTextView.setText("ชื่อ ==> " + nameStrings[i]);
         detailTextView.setText("Detail: "+ detailStrings[i]);
         priceTextView.setText("Price: "+ priceStrings[i]);
         registTextView.setText("วิธีการสมัคร: "+ registStrings[i]);
         periodTextView.setText("ระยะเวลา: "+ periodStrings[i]);
-        detailTextView.setText("เวลาที่บันทึก: "+ detailStrings[i]);
+        dateRecordTextView.setText("เวลาที่บันทึก: "+ dateRecordStrings[i]);
 
 
 

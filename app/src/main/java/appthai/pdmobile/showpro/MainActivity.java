@@ -70,11 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //internet ok
             deleteAllSQLite();
 
-
-
-
-        }
-
+        }   // if
 
     } // check internet
 
@@ -88,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             SynPromotion synPromotion = new SynPromotion(MainActivity.this,i);
             synPromotion.execute(myConstant.getUrlJSONString());
-        }
-    }
+        }   // for
+    }   // deleteAllSQLite
 
     private class SynPromotion extends AsyncTask<String, Void, String> {
         //e
@@ -116,17 +112,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Response response = okHttpClient.newCall(request).execute();
                 return response.body().string();
 
-
-
-
-
-
             } catch (Exception e) {
                 Log.d("10novV1", "e doIn ==>" + e.toString());
                 return null;
             }
-
-
 
         }//doinback
 
@@ -173,11 +162,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void testAddValue() {
-        String[] strings = new String[]{null,"name","detai","price","reg","peiod","date"};
+        String[] strings = new String[]{null,"name","detai","price","reg","code","peiod","date"};
 
         myManage.addValueToSQLite(1, strings);
-        myManage.addValueToSQLite(2, strings);
-        myManage.addValueToSQLite(3, strings);
+       // myManage.addValueToSQLite(2, strings);
+       // myManage.addValueToSQLite(3, strings);
     }
 
     @Override
